@@ -1,4 +1,9 @@
-set smartindent
+"
+" My personal .vimrc file 
+" Created and maintained by Ben Friedland <ben174 (a-t) gmail com> 
+" http://www.bugben.com 
+"
+" set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
