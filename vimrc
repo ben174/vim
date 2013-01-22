@@ -10,6 +10,7 @@ set expandtab
 set smarttab
 set backspace=indent,eol,start
 set nocompatible
+set scrolloff=5
 filetype on
 set cul
 hi CursorLine term=none cterm=none ctermbg=3 
