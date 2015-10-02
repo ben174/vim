@@ -20,6 +20,8 @@ set wildignore+=*.pyc
 "autocmd FileType html setlocal shiftwidth=2 tabstop=2
 "autocmd FileType css setlocal shiftwidth=2 tabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
+autocmd FileType yml setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd FileType yaml setlocal expandtab shiftwidth=2 softtabstop=2
 filetype plugin indent on
 filetype on
 
@@ -43,3 +45,7 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
+autocmd BufWritePre *.py,*.xml :%s/\s\+$//e
+
+"nerdtree stuff
+map <C-n> :NERDTreeToggle<CR>
